@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Portifólio</title>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div>
+        <button class="myBtn" id="myBtn" onclick="myFunction(this);">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+        <div id="mySidenav">
+          <div class="profile">
+            <img src="https://i.ibb.co/xGC2vmf/logo-s.jpg" alt="logo-s" />
+            <h3>Mauricio Dall Onder</h3>
+            <h4>Web Developer</h4>
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-solid fa-globe"></i>
+            </div>
+          </div>
+          <hr class="linha-1" />
+          <section class="box-about-me">
+            <article>
+              <div class="about-me">
+                <div class="box-color">
+                  <div class="about-me1">Idade</div>
+                </div>
+                <div class="about-me2">29</div>
+              </div>
+              <div class="about-me">
+                <div class="box-color">
+                  <div class="about-me1">Nacionalidade</div>
+                </div>
+                <div class="about-me2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBrasileiro</div>
+              </div>
+
+              <div class="about-me">
+                <div class="box-color">
+                  <div class="about-me1">Idiomas</div>
+                </div>
+                <div class="about-me2">&nbsp&nbsp&nbspPortuguês,Inglês</div>
+              </div>
+            </article>
+          </section>
+          <hr class="linha-2" />
+          <section class="box-about-skills">
+            <h3>Skills</h3>
+            <article>
+              <div class="about-skills">
+                <div class="about-skills1">Javascript</div>
+                <div class="about-skills2">90%</div>
+              </div>
+              <div class="skills-bar"><img src="https://storagelonder.w3spaces.com/progress-bar.svg" alt="javascript" /></div>
+              <div class="about-skills">
+                <div class="about-skills1">HTML</div>
+                <div class="about-skills2">90%</div>
+              </div>
+              <div class="skills-bar"><img src="https://storagelonder.w3spaces.com/progress-bar.svg" alt="html" /></div>
+              <div class="about-skills">
+                <div class="about-skills1">CSS</div>
+                <div class="about-skills2">90%</div>
+              </div>
+              <div class="skills-bar"><img src="https://storagelonder.w3spaces.com/progress-bar.svg" alt="css" /></div>
+            </article>
+            <div class="about-skills">
+              <div class="about-skills1">React</div>
+              <div class="about-skills2">80%</div>
+            </div>
+            <div class="skills-bar"><img src="https://storagelonder.w3spaces.com/react-skill.svg" alt=“react” /></div>
+          </section>
+          <hr class="linha-3" />
+          <section class="box-about-extra-skills">
+            <h3>Extra Skills</h3>
+            <div class="about-extra-skills">
+              <ul class="extra-skills-list">
+                <li>Bootstrap</li>
+                <li>Google Api</li>
+                <li>Python</li>
+                <li>Java</li>
+              </ul>
+            </div>
+          </section>
+          <hr class="linha-3" />
+          <section class="footer-left-menu">
+            <div id="curriculo">
+              <div id="imagem"><img src="https://storagelonder.w3spaces.com/curriculo-2.jpg" alt="curriculo">
+              </div>
+              <a href="#" class="fechar-curriculo" id="fechar">&times;</a>
+            </div>
+            <div>
+              <button class="download-cv" id="show">
+                Exibir Curriculo<i class="fa-solid fa-download"></i>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- FIM DA BARRA LETERAL ESQUERDA -->
+      <main id="main">
+        <!-- INICIO DO HEADER DA PAGINA -->
+        <div class="flex-container-header" id="page-header">
+          
+          <div class="flex-header-items">
+            <div class="flex-text-1">
+              <h1>
+                Olá, eu sou Mauricio<br />
+                <strong style="color: #ffb400;">Web-Front End
+                </strong> Developer
+              </h1>
+              <h3> Eu sou um Web developer Brasileiro que adora
+                construir projetos digitais</h3>
+                <button class="contratar">
+                  <a href="#section-contato">Contrate-me -></a>
+              </button>
+            </div>
+            
+            <img id="foto" src="https://storagelonder.w3spaces.com/imagem-fundo-capa.png" alt="foto pessoal" />
+          </div>
+       
+          <div id="cubo">
+            <div id="boxCubo">
+              <div id="front">
+                <i class="fa-brands fa-github" style="color:black;"></i>
+              </div>
+              <div id="back">
+                <i class="fa-brands fa-react" style="color:lightblue;"></i>
+              </div>
+              <div id="left">
+                <i class="fa-brands fa-js-square" style="color:yellow;"></i>
+              </div>
+              <div id="right">
+                <i class="fa-brands fa-html5" style="color:orange ;"></i>
+              </div>
+              <div id="top">
+                <i class="fa-brands fa-bootstrap" style="color:purple ;"></i>
+              </div>
+              <div id="bottom">
+                <i class="fa-brands fa-css3" style="color:blue;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIM DO HEADER DA PAGINA -->
+        <!-- INICIO DO CONTEUDO DE PROJETOS PAGINA -->
+        <div class="introducao-projetos">
+          <i class="fa-solid fa-ellipsis fa-3x" style="color: yellow;">
+          </i>
+          <h1 class="titulo">Meus Projetos</h1>
+          <br>
+          <p class="texto-explicativo">
+            Está é um seleção de projetos em que estou
+            trabalhando/trabalhei, desde março/2021, data na qual iniciei meus estudos na área da
+            programação
+          </p>
+        </div>
+        <section class="meus-projetos" id="section-projetos">
+          <article>
+            <img src="https://storagelonder.w3spaces.com/pc-1.svg" alt="">
+            <h2>Coffe Delivery</h2>
+            <p>Criação de um protótipo de e commerce de cafés</p>
+          </article>
+          <article>
+            <img src="https://storagelonder.w3spaces.com/pc-2.svg" alt="">
+            <h2>Projeto Google Script para Gerar Dias Letivos</h2>
+            <p>Criação de um script para
+              gerar o calandrio escolar de forma automática</p>
+          </article>
+          <article>
+            <img src="https://storagelonder.w3spaces.com/pc-3.svg" alt="pc-1">
+            <h2>Criação de uma Página de Blog GitHub</h2>
+            <p>Criação de uma pagina de blog utilizando a Api do GitHub para obter Informações</p>
+          </article>
+          <article>
+            <img src="https://storagelonder.w3spaces.com/pc-1.svg" alt="pc-2">
+            <h2>TodoList</h2>
+            <p>Projeto que consiste em criar uma lista de tarefas que podem ser editadas</p>
+          </article>
+          <article>
+            <img src="https://storagelonder.w3spaces.com/pc-2.svg" alt="pc-3">
+            <h2>Site para Procura e cadastro de estudantes em uma escola</h2>
+            <p>Criação de um website para cadastrar e pesquisar estudantes de uma escola</p>
+          </article>
+          <article>
+            <img src="https://storagelonder.w3spaces.com/pc-3.svg" alt="pc-4">
+            <h2>Projeto em desenvolvimento</h2>
+            <p>Criação de uma dashboard em react</p>
+          </article>
+        </section>
+        <!-- FIM DO CONTEUDO DE PROJETOS PAGINA -->
+        <!-- INCIO DO CONTEUDO SOBRE FORMAÇÃO DA PAGINA -->
+        <div id="minha-educacao">
+          <h1 class="titulo">Sobre mim</h1>
+          <span class="texto-explicativo">
+            Esses são alguns dos cursos feitos desde março de
+            2021, quando iniciei minha carreira na Área da
+            programação.
+          </span>
+          <div class="educacao-detalhes">
+              <article class="descricao-do-curso">
+                <div class="nome-universidade-ou-curso">
+                  <h1 >Centro Universitário Senac</h1>
+                </div>
+                <div class="periodo-status-do-curso">
+                  <span class="estudante">Estudante&nbsp;
+                    <span class="periodo-do-curso" style="background-color:#FFB400 ;color:#FFFFFF">
+                      Abr/2021
+                    </span>
+                  </span>
+                </div>
+              </article>
+              <article class="descricao-do-curso">
+                <div class="nome-universidade-ou-curso">
+                  <h1 >Análise e Desenvolvimento de Distemas</h1>
+                </div>
+                <div class="periodo-status-do-curso">
+                  <div class="box-resumo-curso">
+                    <span class="resumo-do-curso">
+                      O curso de Análise e Desenvolvimento de
+                      Sistemas visa formar profissionais
+                      capacitados em desenvolver atividades  de
+                      análise de sistemas, modelagem de
+                      processos de negócios, modelagem de dados, projeto
+                      de sistemas e programação.
+                    </span>
+                  </div>
+                  </span>
+                </div>
+              </article> 
+          </div>
+          <!--Fim do primeiro curso-->
+          <div class="educacao-detalhes">
+            <article class="descricao-do-curso">
+              <div class="nome-universidade-ou-curso">
+                <h1 >Cisco Networking Academy</h1>
+              </div>
+              <div class="periodo-status-do-curso">
+                <span class="estudante">Concluido&nbsp;
+                  <span class="periodo-do-curso" style="background-color:#FFB400 ;color:#FFFFFF">
+                    16/05/2022
+                  </span>
+                </span>
+              </div>
+            </article>
+            <article class="descricao-do-curso">
+              <div class="nome-universidade-ou-curso">
+                <h1 >Certificado JavaScript Essentials 1 </h1>
+              </div>
+              <div class="periodo-status-do-curso">
+                <div class="box-resumo-curso">
+                  <span class="resumo-do-curso">
+                    O curso de introdução ao Javascript
+                  mostra
+                  os principais conceitos da linguagem bem
+                  como trabalha o pensamento algoritimico
+                  através da resolução de problemas
+                  práticos.
+                  </span>
+                </div>
+                </span>
+              </div>
+            </article>   
+          </div>
+
+<!--Fim do segundo curso-->
+
+          <div class="educacao-detalhes">
+            <article class="descricao-do-curso">
+              <div class="nome-universidade-ou-curso">
+                <h1 >HackerRank </h1>
+              </div>
+              <div class="periodo-status-do-curso">
+                <span class="estudante">Concluido&nbsp;
+                  <span class="periodo-do-curso" style="background-color:#FFB400 ;color:#FFFFFF">
+                    23/12/2022
+                  </span>
+                </span>
+              </div>
+            </article>
+            <article class="descricao-do-curso">
+              <div class="nome-universidade-ou-curso">
+                <h1 >JavaScript (Intermediate) Certificate</h1>
+              </div>
+              <div class="periodo-status-do-curso">
+                <div class="box-resumo-curso">
+                  <span class="resumo-do-curso">
+                    Prova de conhecimento em Javascript que abrage abrange tópicos como Design Patterns, gerenciamento de memória, loops de eventos, entre outros.
+                  </span>
+                </div>
+                </span>
+              </div>
+            </article> 
+        </div>
+         
+     
+        <!--Fim do terceiro curso-->
+        <div class="educacao-detalhes">
+          <article class="descricao-do-curso">
+            <div class="nome-universidade-ou-curso">
+              <h1 >Coursera/Meta </h1>
+            </div>
+            <div class="periodo-status-do-curso">
+              <span class="estudante">Concluido&nbsp;
+                <span class="periodo-do-curso" style="background-color:#FFB400 ;color:#FFFFFF">
+                  29/09/2022
+                </span>
+              </span>
+            </div>
+          </article>
+          <article class="descricao-do-curso">
+            <div class="nome-universidade-ou-curso">
+              <h1 >React Basics</h1>
+            </div>
+            <div class="periodo-status-do-curso">
+              <div class="box-resumo-curso">
+                <span class="resumo-do-curso">
+                  O curso de introdução ao React ministrado autorizado pela 
+                  Meta e ministrado pela Coursera introduz os principais prontos do React, 
+                  bem como projetos práticos nesse framework.
+                </span>
+              </div>
+              </span>
+            </div>
+          </article> 
+      </div>
+        
+
+        <!-- FIM DO CONTEUDO SOBRE FORMAÇÃO DA PAGINA -->
+        <!-- INCIO DO CONTEUDO SOBRE MIM DA PAGINA -->
+        <div style="display: flex; width: 100%;margin-top: 50px;">
+        <i style="margin: 0 auto;color: yellow" class="fa-solid fa-ellipsis fa-3x"></i>
+      </div>
+        <section id="sobre-mim">
+         
+          <h1 class="titulo">Sobre mim</h1>
+          <span class="texto-explicativo">
+            Olá, meu nome é Mauricio Dall Onder e uso Londer
+            como meu apelido nas mídias sociais. Eu sou um
+            estudante de programação,
+            e busco uma oportunidade no mercado de trabalho,
+            desenvolvi alguns
+            projetos e estou sempre determinado a aprender mais.
+          </span>
+          <div style="display: flex; width: 100%;margin-top: 50px;">
+            <i style="margin: 0 auto;color: yellow" class="fa-solid fa-ellipsis fa-3x"></i>
+          </div>
+        </section>
+        <!-- INCIO DO FIM SOBRE MIM DA PAGINA -->
+        <h1 class="titulo">Informações de Contato</h1>
+        <!-- INCIO DO CONTEUDO SOBRE CONTATO -->
+        <div id="box-de-contato">
+          <section class="form-contato" id="section-contato">
+            <section id="formulario-de-contato">
+              <br>
+              <br>
+              <br>
+              <form class="form" action="mailto:lnder11@icloud.com" method="post" enctype="text/plain">
+                <div class="form-body">
+                  <div class="row">
+                    <div class="input-group">
+                      <label for="FirstName">Nome</label>
+                      <input type="text" name="FirstName" placholder="Enter your first name">
+                    </div>
+                    <div class="input-group">
+                      <label for="Email">Email</label>
+                      <input type="text" name="Email" placholder="Enter your email">
+                    </div>
+                    <div class="input-group">
+                      <label for="Subject">Assunto</label>
+                      <input type="text" name="Subject" placholder="Enter your subject">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-group">
+                      <label for="message">Mensagem</label>
+                      <textarea type="text" name="message"> </textarea>
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <button class="btn">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </section>
+            <section class="box-contato">
+              <div id="box-telefone">
+                <div class="box-icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="box">
+                  <div class="box1">Telefone Pessoal</div>
+                  <div class="box2">+55(54)99254333</div>
+                </div>
+                <div class="box">
+                  <div class="box1">Telefone Comercial</div>
+                  <div class="box2">+55(54)3228-1738</div>
+                </div>
+                <div class="box">
+                  <div class="box1">WhatsApp</div>
+                  <div class="box2">+55(54)99254333</div>
+                </div>
+              </div>
+              <hr class="line"/>
+              <div id="box-mapa">
+                <div class="box-icon">
+                  <i class="fa fa-map"></i>
+                </div>
+                <div class="box">
+                  <div class="box1">Pais</div>
+                  <div class="box2">&nbsp&nbsp&nbsp&nbsp&nbspBrasil</div>
+                </div>
+                <div class="box">
+                  <div class="box1">Cidade</div>
+                  <div class="box2">&nbsp&nbsp&nbsp&nbsp&nbspCaxias do Sul</div>
+                </div>
+                <div class="box">
+                  <div class="box1">Endereço Comercial</div>
+                  <div class="box2">Av. Cabo Machado Severo,810</div>
+                </div>
+              </div>
+              <hr class="line"/>
+              <div id="box-telefone">
+                <div class="box-icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="box">
+                  <div class="box1">E-mail</div>
+                  <div class="box2">londer11@hicloud.com</div>
+                </div>
+                <div class="box">
+                  <div class="box1">Discord</div>
+                  <div class="box2">mauricioLonder#2144</div>
+                </div>
+                <div class="box">
+                  <div class="box1">Github</div>
+                  <div class="box2">https://github.com/mauricioDallOnder</div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <div class="rodape">
+            <div>2022 All Rights Reserved.Mauricio Dall Onder</div>
+          </div>
+        </div>
+      </main>
+      <!-- FIM DO CONTEUDO SOBRE CONTATO -->
+    </div>
+    <!-- INCIO DO MENU DIREITO -->
+    <nav class="rigth-menu">
+      <div class="posicao-menu-rigth"></div>
+      <div class="icons">
+        <a href="#page-header"><i class="fa fa-home fa-1x" style="color:white ;"></i></a>
+        <span class="nav-text">
+          Home
+        </span>
+      </div>
+      <div class="icons">
+        <a href="#section-projetos"><i class="fa fa-code fa-1x" style="color:white ;"></i></a>
+        <span class="nav-text">
+          Projetos
+        </span>
+      </div>
+      <div class="icons">
+        <a href="#formaçao"><i class="fa-solid fa-graduation-cap fa-1x" style="color:white;"></i></a>
+        <span class="nav-text">
+          Educação
+        </span>
+      </div>
+      <div class="icons">
+        <a href="#sobre-mim"><i class="fa fa-info fa-1x" style="color:white ;"></i></a>
+        <span class="nav-text">
+          Sobre mim
+        </span>
+      </div>
+      <div class="icons">
+        <a href="#section-contato"><i class="fa fa-envelope fa-1x" style="color:white ;"></i></a>
+        <span class="nav-text">
+          Contato
+        </span>
+      </div>
+      <!-- FIM DO MENU DIREITO -->
+    </nav>
+    <script>
+$(document).ready(function() {
+   $('#show').click(function() {
+     $('#curriculo').show();
+   });
+   $('#fechar').click(function() {
+     $('#curriculo').hide();
+   });
+
+
+ });
+ //---------------------------------------------
+
+
+ $(window).scroll(function() {
+
+   let target = $(window).scrollTop();
+   let alturaA = $('.rigth-menu').offset().top;
+   let alturaB = alturaA + $('.rigth-menu').height() - 32 - $('.posicao-menu-rigth').height();
+
+   //console.log(target + ' ' + alturaA + ' ' + alturaB);
+   if (target > alturaB) {
+     $('.posicao-menu-rigth').css('margin-top', (alturaB - alturaA) + 'px');
+   } else if (target > alturaA && target < alturaB) {
+     $('.posicao-menu-rigth').css('margin-top', (target - alturaA) + 'px');
+   } else {
+     $('.posicao-menu-rigth').css('margin-top', '0');
+   }
+ });
+
+ //------------------------------------abrir o menu esquerdo ao passar o mouse
+
+
+ function myFunction(x) {
+   x.classList.toggle("change");
+ }
+
+ document.getElementById("myBtn").addEventListener("click", open_close);
+
+ var menuState = 1 // close
+ function open_close() {
+   if (menuState === 0) {
+     menuState = 1;
+     document.getElementById("mySidenav").style.width = "250px";
+     //document.getElementById("main").style.marginLeft = "250px";
+   } else {
+     menuState = 0;
+     document.getElementById("mySidenav").style.width = "0";
+     //document.getElementById("main").style.marginLeft = "0";
+   }
+   console.log(menuState);
+ }
+
+    </script>
+
+
+    </body>
+   </html>
