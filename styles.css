@@ -586,7 +586,11 @@ button {
   border-bottom: 2px solid var(--green-500);
 }
 
-
+@media (max-width: 600px) {
+  .educacao-detalhes {
+    flex-direction: column;
+  }
+}
 
 .descricao-do-curso {
   display: flex;
