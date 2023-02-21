@@ -100,16 +100,13 @@
           </section>
           <hr class="linha-3" />
           <section class="footer-left-menu">
-            <div id="curriculo">
-              <div id="imagem"><img src="https://firebasestorage.googleapis.com/v0/b/chat-dos-otarios.appspot.com/o/curriculo%20portugues_page-0001.jpg?alt=media&token=1400a927-7a6e-416a-9dcf-d470223dff49" alt="curriculo">
-              </div>
-              <a href="#" class="fechar-curriculo" id="fechar">&times;</a>
-            </div>
-            <div>
-              <button class="download-cv" id="show">
-                Exibir Curriculo<i class="fa-solid fa-download"></i>
-              </button>
-            </div>
+            <button class="download-cv" id="show">
+              <i class="fa-solid fa-download"></i>
+              &nbsp
+              <a href="curriculo.html">Exibir Curriculo</a>
+            </button>
+             
+            </button>
           </section>
         </div>
       </div>
@@ -462,74 +459,8 @@
       </main>
       <!-- FIM DO CONTEUDO SOBRE CONTATO -->
     </div>
-    <!-- INCIO DO MENU DIREITO -->
-    <nav class="rigth-menu">
-      <div class="posicao-menu-rigth"></div>
-      <div class="icons">
-        <a href="#page-header"><i class="fa fa-home fa-1x" style="color:white ;"></i></a>
-        <span class="nav-text">
-          Home
-        </span>
-      </div>
-      <div class="icons">
-        <a href="#section-projetos"><i class="fa fa-code fa-1x" style="color:white ;"></i></a>
-        <span class="nav-text">
-          Projetos
-        </span>
-      </div>
-      <div class="icons">
-        <a href="#formaçao"><i class="fa-solid fa-graduation-cap fa-1x" style="color:white;"></i></a>
-        <span class="nav-text">
-          Educação
-        </span>
-      </div>
-      <div class="icons">
-        <a href="#sobre-mim"><i class="fa fa-info fa-1x" style="color:white ;"></i></a>
-        <span class="nav-text">
-          Sobre mim
-        </span>
-      </div>
-      <div class="icons">
-        <a href="#section-contato"><i class="fa fa-envelope fa-1x" style="color:white ;"></i></a>
-        <span class="nav-text">
-          Contato
-        </span>
-      </div>
-      <!-- FIM DO MENU DIREITO -->
-    </nav>
+   
     <script>
-$(document).ready(function() {
-   $('#show').click(function() {
-     $('#curriculo').show();
-   });
-   $('#fechar').click(function() {
-     $('#curriculo').hide();
-   });
-
-
- });
- //---------------------------------------------
-
-
- $(window).scroll(function() {
-
-   let target = $(window).scrollTop();
-   let alturaA = $('.rigth-menu').offset().top;
-   let alturaB = alturaA + $('.rigth-menu').height() - 32 - $('.posicao-menu-rigth').height();
-
-   //console.log(target + ' ' + alturaA + ' ' + alturaB);
-   if (target > alturaB) {
-     $('.posicao-menu-rigth').css('margin-top', (alturaB - alturaA) + 'px');
-   } else if (target > alturaA && target < alturaB) {
-     $('.posicao-menu-rigth').css('margin-top', (target - alturaA) + 'px');
-   } else {
-     $('.posicao-menu-rigth').css('margin-top', '0');
-   }
- });
-
- //------------------------------------abrir o menu esquerdo ao passar o mouse
-
-
  function myFunction(x) {
    x.classList.toggle("change");
  }
